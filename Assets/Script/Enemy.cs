@@ -179,7 +179,7 @@ public class Enemy : MonoBehaviour
             Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-                playerRb.AddForce(-knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+                playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
             }
         }
 
